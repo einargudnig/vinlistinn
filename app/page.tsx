@@ -1,11 +1,17 @@
 import Image from 'next/image'
+import { Footer } from '@/components/footer'
 import { SmallCard } from '@/components/smallcard'
+
 
 export default function Home() {
   return (
+    <>
+    <header className="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img">
+      <div className="p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl">Vínlistinn</div>
+    </header>
     <main className="flex min-h-screen flex-col items-center justify-between">
       <div>
-        <Image
+        {/* <Image
               // src="/images/header.jpg"
               src="/images/midjourney-wine.png"
               alt="Header Image"
@@ -13,7 +19,7 @@ export default function Home() {
               width={1624}
               height={260}
               priority
-            />
+            /> */}
       </div>
       <div className="p-10 flex flex-row w-full">
       <div className="w-2/3 ">
@@ -103,6 +109,10 @@ export default function Home() {
           </p>
         </a>
       </div>
-    </main>
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+      </>
   )
 }
