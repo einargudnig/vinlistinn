@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { CardDemo } from '@/components/card'
+import { SmallCard } from '@/components/smallcard'
 
 export default function Home() {
   return (
@@ -15,9 +15,9 @@ export default function Home() {
               priority
             />
       </div>
-      <div className="flex flex-row w-full">
-      <div className="z-10 w-2/3 max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <CardDemo />
+      <div className="p-10 flex flex-row w-full">
+      <div className="w-2/3 ">
+        <SmallCard />
         
       </div>
         <div className="w-1/3">Wine Bottle</div>

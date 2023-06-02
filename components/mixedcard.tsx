@@ -30,11 +30,11 @@ const notifications = [
 
 type CardProps = React.ComponentProps<typeof Card>
 
-export function CardDemo({ className, ...props }: CardProps) {
+export function MixedCard({ className, ...props }: CardProps) {
   return (
     <Card className={cn("w-[380px]", className)} {...props}>
       <CardHeader>
-        <CardTitle>Notifications</CardTitle>
+        <CardTitle>Blandaði pakkinn</CardTitle>
         <CardDescription>You have 3 unread messages.</CardDescription>
       </CardHeader>
       <CardContent className="grid gap-4">
