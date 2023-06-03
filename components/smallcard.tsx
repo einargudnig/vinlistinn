@@ -1,4 +1,5 @@
-import { BellRing, Check, Wine } from "lucide-react"
+import { Wine } from "lucide-react"
+import Image from "next/image"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -13,12 +14,6 @@ import {
 import { Separator } from "@/components/ui/separator"
 import { Switch } from "@/components/ui/switch"
 
-const notifications = [
-  {
-    title: "4 flöskur",
-    description: "1 hour ago",
-  }
-]
 
 type CardProps = React.ComponentProps<typeof Card>
 
@@ -31,17 +26,13 @@ export function SmallCard({ className, ...props }: CardProps) {
       </CardHeader>
       <CardContent className="grid gap-4">
         <div className=" flex items-center space-x-4 rounded-md border p-4">
-          <BellRing />
-          <div className="flex-1 space-y-1">
-            <p className="text-sm font-medium leading-none">
-              Push Notifications
-            </p>
-            <p className="text-sm text-muted-foreground">
-              Send notifications to device.
-            </p>
-          </div>
-          <Switch />
-          {/* IMAGE */}
+          <Image
+            className="rounded-md"
+            src="/images/small.png"
+            alt="Small subscription"
+            width={300}
+            height={250}
+          />
         </div>
         <div>
             <div className="mb-4 grid grid-cols-[25px_1fr] items-start pb-4 last:mb-0 last:pb-0">

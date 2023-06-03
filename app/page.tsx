@@ -2,8 +2,6 @@ import { Footer } from '@/components/footer'
 import { SmallCard } from '@/components/smallcard'
 import { DeluxeCard } from '@/components/deluxecard'
 import { MixedCard } from '@/components/mixedcard'
-import { Alert } from '@/components/alert'
-import { AlertDialogTrigger } from "@/components/ui/alert-dialog"
 
 
 export default function Home() {
@@ -15,17 +13,16 @@ export default function Home() {
         <div className="mt-2 text-xl font-medium">Gæðavín frá litlum og fjölskyldureknum vínekrum</div>
       </div>
     </header>
-    <main className="flex min-h-screen flex-col items-center justify-between">
-      <div className="grid gap-4 grid-cols-1 md:grid-cols-3">
+    <main className="flex min-h-screen flex-col items-center">
+      <div className="mt-12 grid gap-4 grid-cols-1 md:grid-cols-3">
         <SmallCard />
         <DeluxeCard />
         <MixedCard />
       </div>
         {/* <div className="w-1/3">Wine Bottle</div> */}
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
+      <div className="grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left mt-12">
         <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
@@ -43,7 +40,6 @@ export default function Home() {
         
 
         <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
           target="_blank"
           rel="noopener noreferrer"
@@ -60,7 +56,6 @@ export default function Home() {
         </a>
 
         <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
@@ -77,7 +72,6 @@ export default function Home() {
         </a>
 
           <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
             className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
             target="_blank"
             rel="noopener noreferrer"

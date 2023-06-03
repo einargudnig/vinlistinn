@@ -1,4 +1,5 @@
-import { BellRing, Wine } from "lucide-react"
+import { Wine } from "lucide-react"
+import Image from "next/image"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -24,16 +25,13 @@ export function MixedCard({ className, ...props }: CardProps) {
       </CardHeader>
       <CardContent className="grid gap-4">
         <div className=" flex items-center space-x-4 rounded-md border p-4">
-          <BellRing />
-          <div className="flex-1 space-y-1">
-            <p className="text-sm font-medium leading-none">
-              Push Notifications
-            </p>
-            <p className="text-sm text-muted-foreground">
-              Send notifications to device.
-            </p>
-          </div>
-          <Switch />
+          <Image
+            className="rounded-md"
+            src="/images/mixed.png"
+            alt="Mixed subscription"
+            width={300}
+            height={250}
+          />
         </div>
         <div>
             <div
@@ -45,7 +43,7 @@ export function MixedCard({ className, ...props }: CardProps) {
                   5 flöskur
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  Þessi er fullkominn ef þú villt drekka meira en rauðvín
+                  Ef þú villt smakka meira en rauðvín
                 </p>
               </div>
             </div>
