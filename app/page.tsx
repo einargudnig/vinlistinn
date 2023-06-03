@@ -86,8 +86,6 @@ export default function Home() {
               Ýmis fróðleikur um Vín
             </p>
           </a>
-
-
       </div>
       </main>
       <footer>
