@@ -6,7 +6,7 @@ import { MixedCard } from "@/components/mixedcard";
 export default function Home() {
   return (
     <>
-      <header className="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img">
+      <header className="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img sm:bg-fixed sm:bg-center sm:bg-no-repeat">
         <div className="flex flex-col items-center justify-center">
           <div className="p-5 text-3xl font-semibold bg-gray-300 bg-opacity-50 rounded-xl mb-2">
             Vínlistinn
