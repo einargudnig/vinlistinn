@@ -43,7 +43,6 @@
     "prettier": "^2.8.8"
   },
   "module": "index.ts",
-  "type": "module",
   "peerDependencies": {
     "typescript": "^5.0.0"
   }
