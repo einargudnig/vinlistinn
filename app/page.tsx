@@ -22,6 +22,7 @@ export default function Home() {
           <Image
             src="/images/midjourney-wine.png"
             alt="Background Image"
+            className="w-full h-full object-cover"
             width={1620}
             height={800}
           />
