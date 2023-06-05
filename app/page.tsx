@@ -44,6 +44,10 @@ export default function Home() {
         </div>
         {/* <div className="w-1/3">Wine Bottle</div> */}
 
+        <div className="m-6 border-1 border-gray-300 rounded-md">
+          Síðan er vinnslu, fylgstu með!
+        </div>
+
         <div className="grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left mt-12">
           <a
             className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
