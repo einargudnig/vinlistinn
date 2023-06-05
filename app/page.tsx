@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Footer } from "@/components/footer";
 import { SmallCard } from "@/components/smallcard";
 import { DeluxeCard } from "@/components/deluxecard";
@@ -6,7 +7,7 @@ import { MixedCard } from "@/components/mixedcard";
 export default function Home() {
   return (
     <>
-      <header className="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img sm:bg-fixed sm:bg-center sm:bg-no-repeat">
+      {/* <header className="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img sm:bg-fixed sm:bg-center sm:bg-no-repeat">
         <div className="flex flex-col items-center justify-center">
           <div className="p-5 text-3xl font-semibold bg-gray-300 bg-opacity-50 rounded-xl mb-2">
             Vínlistinn
@@ -14,6 +15,24 @@ export default function Home() {
           <div className="mt-2 text-xl font-medium">
             Gæðavín frá litlum og fjölskyldureknum vínekrum
           </div>
+        </div>
+      </header> */}
+      <header className="relative h-screen mb-12 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/midjourney-wine.png"
+            alt="Background Image"
+            width={1620}
+            height={800}
+          />
+        </div>
+        <div className="absolute inset-0 flex flex-col items-center justify-center">
+          <h1 className="text-3xl font-semibold text-white bg-gray-300 bg-opacity-50 p-5 rounded-xl">
+            Vínlistinn
+          </h1>
+          <p className="mt-2 text-xl font-medium text-white">
+            Gæðavín frá litlum og fjölskyldureknum vínekrum
+          </p>
         </div>
       </header>
       <main className="flex min-h-screen flex-col items-center">
